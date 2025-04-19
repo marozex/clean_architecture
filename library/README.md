@@ -8,15 +8,21 @@
 ```
 
 ## 構築手順
+### 基礎手順
 ```
 npm init -y
 npm i express @prisma/client
 npm i -D typescript @types/node @types/express ts-node-dev prisma
 npx tsc --init
-```
 
-### 動作確認
-```
 npm run dev
 curl localhost:3000
+```
+
+### DB
+```
+npx prisma init
+vi .env // sqliteに変更
+vi schema.prisma // モデル定義追加
+npx prisma db push
 ```

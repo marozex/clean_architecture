@@ -1,1 +1,3 @@
 library/node_modules
+library/prisma/dev.db
+library/.env

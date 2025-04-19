@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { BookServiceInterface } from "../businessLogic/bookServiceInterface";
 
-export class BookcController {
+export class BookController {
   constructor(private readonly bookService: BookServiceInterface) {}
 
   async add(req: Request, res: Response): Promise<void> {

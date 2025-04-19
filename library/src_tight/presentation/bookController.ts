@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { BookService } from "../businessLogic/bookService";
 
-export class BookcController {
+export class BookController {
   private bookService: BookService;
 
   constructor() {

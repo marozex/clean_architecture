@@ -1,16 +1,20 @@
 import express from "express";
 import { BookcController } from "./presentation/bookController";
+import { PrismaBookRepository } from "./dataAccess/prismaBookRepository";
+import { BookService } from "./businessLogic/bookService";
 
 const app = express();
 
 app.use(express.json());
 
-const bookcController = new BookcController();
+const bookRepository = new PrismaBookRepository();
+const bookService = new BookService(bookRepository);
+const bookController = new BookcController(bookService);
 
 const PORT = process.env.PORT || 3000;
 
-app.post("/books", bookcController.add.bind(bookcController));
-app.get("/books/:id", bookcController.findById.bind(bookcController));
+app.post("/books", bookController.add.bind(bookController));
+app.get("/books/:id", bookController.findById.bind(bookController));
 
 // 動作確認用サンプルエンドポイント
 // app.get("/", (req, res) => {

@@ -1,4 +1,4 @@
-import { BookRepopsitoryInterface } from "../dataAccess/bookRepositoryInterface";
+import { BookRepopsitoryInterface } from "../domain/repositories/bookRepositoryInterface";
 import { BookService } from "./bookService";
 import { Book } from "@prisma/client";
 

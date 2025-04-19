@@ -1,5 +1,5 @@
 import { Book, PrismaClient } from "@prisma/client";
-import { BookRepopsitoryInterface } from "./bookRepositoryInterface";
+import { BookRepopsitoryInterface } from "../domain/repositories/bookRepositoryInterface";
 
 export class PrismaBookRepository implements BookRepopsitoryInterface {
   private prisma: PrismaClient;

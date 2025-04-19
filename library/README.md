@@ -1,5 +1,7 @@
 ## レイヤードアーキテクチャ
+
 ### 密結合
+
 ```
 プレゼンテーション層
 ↓
@@ -7,7 +9,9 @@
 ↓
 データアクセス層
 ```
+
 ### 疎結合
+
 ```
 プレゼンテーション層
 ↓
@@ -19,7 +23,9 @@
 ```
 
 ## 構築手順
+
 ### 基礎手順
+
 ```
 npm init -y
 npm i express @prisma/client
@@ -31,6 +37,7 @@ curl localhost:3000
 ```
 
 ### DB
+
 ```
 npx prisma init
 vi .env // sqliteに変更
@@ -39,7 +46,18 @@ npx prisma db push // DBスキーマ更新
 npx prisma generate // 型定義生成
 ```
 
+### テスト
+
+```
+npm i -D jest @types/jest ts-jest
+npx ts-jest config:init
+vi package.json //testコマンドをjestに修正
+//テストケース追加
+npm test
+```
+
 ### リクエストテスト
+
 ```
 curl -X POST --json '{"title":"入門"}' http://localhost:3000/books
 

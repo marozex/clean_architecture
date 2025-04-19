@@ -24,5 +24,6 @@ curl localhost:3000
 npx prisma init
 vi .env // sqliteに変更
 vi schema.prisma // モデル定義追加
-npx prisma db push
+npx prisma db push // DBスキーマ更新
+npx prisma generate // 型定義生成
 ```

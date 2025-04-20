@@ -4,7 +4,7 @@
   "description": "書籍管理アプリ",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/infrastructure/web/app.ts",
     "test": "jest"
   },
   "keywords": [],

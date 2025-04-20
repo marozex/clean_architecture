@@ -29,8 +29,8 @@
 フレームワーク＆ドライバー層(infrastructure)：フレームワーク、DBアクセス、外部API接続など
   - expressのrouterなど
 インターフェースアダプター層(adapter)：ビジネスロジックと外部インターフェースをつなげる
-  - コントローラー（expressとビジネスロジックをつなぐ）
-  - リポジトリ（prismaとビジネスロジックをつなぐ）
+  - コントローラー（expressとビジネスロジックをつなぐ。ユーザーリクエストを受取り適切なユースケースを実行する）
+  - リポジトリ（prismaとビジネスロジックをつなぐ。書籍の永続化を行う）
   - ゲートウェイ
   - プレゼンター
 ユースケース層(application)：ユーザー操作やビジネスルールの具体的な適用方法
@@ -48,7 +48,7 @@
 
 ```
 npm init -y
-npm i express @prisma/client
+npm i express @prisma/client uuid
 npm i -D typescript @types/node @types/express ts-node-dev prisma
 npx tsc --init
 

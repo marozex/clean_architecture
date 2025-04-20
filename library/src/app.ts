@@ -1,5 +1,5 @@
 import express from "express";
-import { BookController } from "./presentation/bookController";
+import { BookController } from "./adapter/controllers/bookController";
 import { PrismaBookRepository } from "./dataAccess/prismaBookRepository";
 import { BookService } from "./businessLogic/bookService";
 

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/infrastructure/web/app.ts",
+    "practice": "ts-node-dev --respawn --transpile-only src_layered_practice/app.ts",
     "test": "jest"
   },
   "keywords": [],

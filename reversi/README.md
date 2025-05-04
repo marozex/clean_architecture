@@ -3,8 +3,8 @@
 ts-node ではなく tsx を使う
 
 ```
-npm install --save-dev typescript tsx @types/express nodemon
-npm install express
+npm install --save-dev typescript tsx @types/express nodemon @types/morgan
+npm install express morgan
 ```
 
 ### 動作確認

@@ -1,3 +1,5 @@
 library/node_modules
 library/prisma/dev.db
 library/.env
+
+reversi/node_modules

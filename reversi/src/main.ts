@@ -13,6 +13,10 @@ app.get("/api/hello", async (req, res) => {
   });
 });
 
+app.get("/api/error", async (req, res) => {
+  throw new Error("error occurred");
+});
+
 app.listen(PORT, () => {
   console.log(`reversi app started: http://localhost:${PORT}`);
 });

@@ -22,3 +22,8 @@ npm install express morgan mysql2
 1. nodemo.json 追加
 2. package.json の scripts に nodemon 追記
 3. `npm start`
+
+### スキーマ変更
+1. cat mysql/init.sql | docker compose exec -T mysql mysql -uroot -prootpass
+2. bin/connect_mysql.sh 
+3. show tables;

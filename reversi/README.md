@@ -4,7 +4,7 @@ ts-node ではなく tsx を使う
 
 ```
 npm install --save-dev typescript tsx @types/express nodemon @types/morgan
-npm install express morgan
+npm install express morgan mysql2
 ```
 
 ### 動作確認

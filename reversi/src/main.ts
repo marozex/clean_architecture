@@ -7,6 +7,9 @@ const app = express();
 
 app.use(morgan("dev"));
 
+// extensions指定することでURL末尾の拡張子を省略
+app.use(express.static("static", { extensions: ["html"] }));
+
 app.get("/api/hello", async (req, res) => {
   res.json({
     message: "hello express",

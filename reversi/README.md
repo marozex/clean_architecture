@@ -24,6 +24,11 @@ npm install express morgan mysql2
 3. `npm start`
 
 ### スキーマ変更
+
 1. cat mysql/init.sql | docker compose exec -T mysql mysql -uroot -prootpass
-2. bin/connect_mysql.sh 
+2. bin/connect_mysql.sh
 3. show tables;
+
+## 参考
+
+Udemy リバーシで学ぶアプリケーション設計入門

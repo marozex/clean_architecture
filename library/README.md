@@ -89,3 +89,7 @@ curl -X POST --json '{"title":"入門"}' http://localhost:3000/books
 curl -X GET http://localhost:3000/books/b58d0bb0-bfd4-4c34-b83e-728c68db7729 //一つ前のコマンドで登録したレコードのIDを指定
 curl -X GET http://localhost:3000/books/hogehoge //存在しないIDなのでエラー
 ```
+
+## 参考
+
+Udemy 実践アプリケーション設計入門
